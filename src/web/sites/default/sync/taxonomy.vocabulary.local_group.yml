@@ -1,0 +1,8 @@
+uuid: 73d632ea-64c4-4798-960c-18af1ebbe1ea
+langcode: en
+status: true
+dependencies: {  }
+name: 'Local Group'
+vid: local_group
+description: ''
+weight: 0

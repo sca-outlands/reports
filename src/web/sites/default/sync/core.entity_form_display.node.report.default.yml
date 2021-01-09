@@ -1,0 +1,46 @@
+uuid: 3b4c9c4a-ae74-4db7-ae62-7321e7f6ad42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.report.field_group_synopsis
+    - field.field.node.report.field_local_group
+    - node.type.report
+id: node.report.default
+targetEntityType: node
+bundle: report
+mode: default
+content:
+  field_group_synopsis:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_local_group:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

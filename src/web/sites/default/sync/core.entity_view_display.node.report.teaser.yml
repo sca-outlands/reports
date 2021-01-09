@@ -1,0 +1,24 @@
+uuid: d1b576f6-58cb-48b3-8384-9f6ddd4b9af6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.report.field_group_synopsis
+    - field.field.node.report.field_local_group
+    - node.type.report
+  module:
+    - user
+id: node.report.teaser
+targetEntityType: node
+bundle: report
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_group_synopsis: true
+  field_local_group: true

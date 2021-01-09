@@ -1,0 +1,29 @@
+uuid: da498759-f508-43ad-8a44-30bbef6feef9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_local_group
+    - node.type.report
+    - taxonomy.vocabulary.local_group
+id: node.report.field_local_group
+field_name: field_local_group
+entity_type: node
+bundle: report
+label: 'Local Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      local_group: local_group
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

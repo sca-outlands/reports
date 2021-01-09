@@ -1,0 +1,19 @@
+uuid: 16a5830c-8bcb-42b5-8122-e03abcee63e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_synopsis
+    - node.type.report
+id: node.report.field_group_synopsis
+field_name: field_group_synopsis
+entity_type: node
+bundle: report
+label: 'Group Synopsis'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
